@@ -18,4 +18,15 @@ module.exports = ({ env }) => ({
         },
       },
     },
+      'cloudflare-pages': {
+    enabled: true,
+    config: {
+      instances: [
+        {
+          name: "Deploy Website",
+          hook_url: 'https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/83417c52-afc7-4e5b-97bb-0d569a6bc035'
+        },
+      ]
+    }
+  }
   });
