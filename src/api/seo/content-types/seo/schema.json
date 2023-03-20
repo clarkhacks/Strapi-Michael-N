@@ -4,7 +4,8 @@
   "info": {
     "singularName": "seo",
     "pluralName": "seos",
-    "displayName": "SEO"
+    "displayName": "SEO",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,20 @@
       "type": "string"
     },
     "Banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "About": {
+      "type": "richtext"
+    },
+    "My_Photo": {
       "allowedTypes": [
         "images",
         "files",
