@@ -18,21 +18,22 @@
     "Formatted_Phone": {
       "type": "string"
     },
-    "Raw_Phone": {
-      "type": "integer"
-    },
     "Appointment_Link": {
       "type": "string"
     },
     "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Raw_Phone": {
+      "type": "string"
     }
   }
 }
